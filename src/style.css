@@ -13,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .buttons {
   display: flex;
   flex-direction: row;
@@ -32,6 +33,7 @@ body {
   border-radius: 2rem;
   margin-left: 1rem;
 }
+
 .sort {
   background: rgb(30, 145, 0);
   background: radial-gradient(
@@ -45,6 +47,7 @@ body {
   border-radius: 2rem;
   margin-left: 1rem;
 }
+
 .card {
   width: 12.5rem;
   height: 17.5rem;
@@ -56,15 +59,18 @@ body {
   justify-content: space-between;
   margin: 1rem;
 }
+
 .header {
   font-size: 2rem;
   margin-left: 0.75rem;
 }
+
 .main {
   font-size: 6rem;
   display: flex;
   justify-content: center;
 }
+
 .footer {
   font-size: 2rem;
   margin-right: 0.75rem;
@@ -76,6 +82,7 @@ body {
 .color1 {
   color: red;
 }
+
 .color2 {
   color: black;
 }
