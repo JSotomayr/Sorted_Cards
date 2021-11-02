@@ -5,8 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-const BODY = document.querySelector("body");
-
 const SYMBOLCARD = ["♦", "♥", "♠", "♣"];
 const CARDITEM = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 const CARDSINPUT = document.querySelector(".ncards");
@@ -64,6 +62,7 @@ function drawCards(object) {
     }
   }
 }
+
 let cards = [];
 DRAW_BUTTON.addEventListener("submit", event => {
   event.preventDefault();
@@ -85,9 +84,9 @@ SORT_BUTTON.addEventListener("click", event => {
   for (let i = 0; i < len; i++) {
     for (let j = 1; j < len; j++) {
       if (cards[j - 1].item > cards[j].item) {
-        let tmp = cards[j - 1].item;
-        cards[j - 1].item = cards[j].item;
-        cards[j].item = tmp;
+        let tmp = cards[j - 1];
+        cards[j - 1] = cards[j];
+        cards[j] = tmp;
       }
     }
   }
