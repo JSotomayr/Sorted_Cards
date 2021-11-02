@@ -78,6 +78,7 @@ DRAW_BUTTON.addEventListener("submit", event => {
 
 SORT_BUTTON.addEventListener("click", event => {
   event.preventDefault();
+
   let len = cards.length;
 
   for (let i = 0; i < len; i++) {
@@ -89,7 +90,6 @@ SORT_BUTTON.addEventListener("click", event => {
       }
     }
   }
-  console.log(cards);
   ROW.innerHTML = "";
   drawCards(cards);
 });
